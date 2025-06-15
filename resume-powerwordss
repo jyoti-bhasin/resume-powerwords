@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechUprise: Power Verbs for Tech Resumes</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for the TechUprise watermark */
+        .watermark-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            opacity: 0.05; /* Very subtle */
+            pointer-events: none; /* Allows clicks to pass through */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .watermark-text {
+            font-size: 8rem; /* Large font size */
+            font-weight: 800; /* Extra bold */
+            color: #93c5fd; /* Light blue color for watermark */
+            transform: rotate(-45deg); /* Rotate for a dynamic look */
+            user-select: none; /* Prevent text selection */
+            background-image: repeating-linear-gradient(45deg, rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 10px, transparent 10px, transparent 20px);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 20px 20px;
+        }
+        /* Custom colors for consistency */
+        .text-dark-blue {
+            color: #1a202c; /* A darker shade for headings */
+        }
+        /* Custom styling for verb tags */
+        .verb-tag {
+            background-color: #f8fafc; /* Tailwind: bg-slate-50 or bg-gray-50 equivalent */
+            padding: 0.5rem 0.75rem; /* py-2 px-3 equivalent */
+            border-radius: 0.5rem; /* rounded-lg equivalent */
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* subtle shadow */
+            transition: all 0.2s ease-in-out;
+            cursor: default; /* Not interactive like keywords, just a display */
+            border: 1px solid #e2e8f0; /* Tailwind: border-slate-200 or border-gray-200 equivalent */
+            font-size: 0.875rem; /* text-sm equivalent */
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="antialiased bg-white text-gray-900 min-h-screen flex flex-col relative">
+
+    <!-- Watermark Overlay -->
+    <div class="watermark-overlay">
+        <span class="watermark-text">TechUprise</span>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto px-4 py-8 md:px-8 lg:px-12 relative z-10">
+
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 md:p-12 lg:p-16 rounded-xl shadow-lg mb-12 relative overflow-hidden">
+            <!-- Decorative shapes -->
+            <div class="absolute top-0 left-0 w-32 h-32 bg-purple-500 opacity-20 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 right-0 w-48 h-48 bg-blue-500 opacity-20 rounded-full translate-x-1/2 -translate-y-1/2"></div>
+
+            <!-- Product Name -->
+            <p class="text-xl sm:text-2xl lg:text-3xl font-extrabold mb-2 leading-tight">
+                TechUprise: Interview Xpress 30
+            </p>
+            <!-- Tagline -->
+            <p class="text-lg sm:text-xl font-light mb-4 italic">
+                Craft a Resume That Demands Attention.
+            </p>
+            <!-- Guide Title -->
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4 leading-tight">
+                Power Verbs for Tech Resumes
+            </h1>
+
+            <div class="mt-6 flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0">
+                <img
+                  src="https://placehold.co/150x150/800080/FFFFFF?text=Verbs"
+                  alt="Power Verbs Icon"
+                  class="w-20 h-20 sm:w-24 sm:h-24 rounded-full shadow-md border-4 border-purple-300"
+                  onerror="this.onerror=null; this.src='https://placehold.co/150x150/800080/FFFFFF?text=Verbs';"
+                />
+                <p class="text-md sm:text-lg italic font-medium">
+                    Your resume is your personal pitch. Using strong action verbs immediately creates an impression of impact and ownership. Instead of writing what you were "responsible for," show what you achieved.
+                </p>
+            </div>
+        </section>
+
+        <!-- Power Verbs for Different Resume Sections -->
+        <section class="bg-white p-6 md:p-8 rounded-xl shadow-md mb-12 border border-gray-200">
+            <h2 class="text-2xl lg:text-3xl font-bold text-blue-900 mb-6">
+                💥 Power Verbs for Different Resume Sections:
+            </h2>
+
+            <!-- Coding & Development -->
+            <div class="mb-8 p-4 bg-blue-50 rounded-lg shadow-sm border border-blue-200">
+                <h3 class="text-xl lg:text-2xl font-semibold text-blue-700 mb-3 flex items-center">
+                    <span class="mr-2 text-purple-600 text-2xl">🔹</span> Coding & Development
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-gray-800">
+                    <span class="verb-tag">Engineered</span>
+                    <span class="verb-tag">Developed</span>
+                    <span class="verb-tag">Implemented</span>
+                    <span class="verb-tag">Automated</span>
+                    <span class="verb-tag">Programmed</span>
+                    <span class="verb-tag">Optimized</span>
+                    <span class="verb-tag">Debugged</span>
+                    <span class="verb-tag">Refactored</span>
+                    <span class="verb-tag">Integrated</span>
+                    <span class="verb-tag">Deployed</span>
+                </div>
+            </div>
+
+            <!-- Problem Solving -->
+            <div class="mb-8 p-4 bg-purple-50 rounded-lg shadow-sm border border-purple-200">
+                <h3 class="text-xl lg:text-2xl font-semibold text-purple-700 mb-3 flex items-center">
+                    <span class="mr-2 text-pink-600 text-2xl">🔹</span> Problem Solving
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-gray-800">
+                    <span class="verb-tag">Resolved</span>
+                    <span class="verb-tag">Troubleshot</span>
+                    <span class="verb-tag">Investigated</span>
+                    <span class="verb-tag">Diagnosed</span>
+                    <span class="verb-tag">Improved</span>
+                    <span class="verb-tag">Simplified</span>
+                    <span class="verb-tag">Streamlined</span>
+                </div>
+            </div>
+
+            <!-- Teamwork & Collaboration -->
+            <div class="mb-8 p-4 bg-blue-50 rounded-lg shadow-sm border border-blue-200">
+                <h3 class="text-xl lg:text-2xl font-semibold text-blue-700 mb-3 flex items-center">
+                    <span class="mr-2 text-purple-600 text-2xl">🔹</span> Teamwork & Collaboration
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-gray-800">
+                    <span class="verb-tag">Collaborated</span>
+                    <span class="verb-tag">Coordinated</span>
+                    <span class="verb-tag">Contributed</span>
+                    <span class="verb-tag">Assisted</span>
+                    <span class="verb-tag">Mentored</span>
+                    <span class="verb-tag">Partnered</span>
+                    <span class="verb-tag">Liaised</span>
+                </div>
+            </div>
+
+            <!-- Leadership & Initiative -->
+            <div class="mb-8 p-4 bg-purple-50 rounded-lg shadow-sm border border-purple-200">
+                <h3 class="text-xl lg:text-2xl font-semibold text-purple-700 mb-3 flex items-center">
+                    <span class="mr-2 text-pink-600 text-2xl">🔹</span> Leadership & Initiative
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-gray-800">
+                    <span class="verb-tag">Led</span>
+                    <span class="verb-tag">Spearheaded</span>
+                    <span class="verb-tag">Initiated</span>
+                    <span class="verb-tag">Managed</span>
+                    <span class="verb-tag">Oversaw</span>
+                    <span class="verb-tag">Facilitated</span>
+                    <span class="verb-tag">Delegated</span>
+                    <span class="verb-tag">Directed</span>
+                </div>
+            </div>
+
+            <!-- Analysis & Data -->
+            <div class="mb-8 p-4 bg-blue-50 rounded-lg shadow-sm border border-blue-200">
+                <h3 class="text-xl lg:text-2xl font-semibold text-blue-700 mb-3 flex items-center">
+                    <span class="mr-2 text-purple-600 text-2xl">🔹</span> Analysis & Data
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-gray-800">
+                    <span class="verb-tag">Analyzed</span>
+                    <span class="verb-tag">Interpreted</span>
+                    <span class="verb-tag">Evaluated</span>
+                    <span class="verb-tag">Measured</span>
+                    <span class="verb-tag">Audited</span>
+                    <span class="verb-tag">Synthesized</span>
+                    <span class="verb-tag">Forecasted</span>
+                </div>
+            </div>
+
+            <!-- Results & Impact -->
+            <div class="p-4 bg-purple-50 rounded-lg shadow-sm border border-purple-200">
+                <h3 class="text-xl lg:text-2xl font-semibold text-purple-700 mb-3 flex items-center">
+                    <span class="mr-2 text-pink-600 text-2xl">🔹</span> Results & Impact
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-gray-800">
+                    <span class="verb-tag">Achieved</span>
+                    <span class="verb-tag">Exceeded</span>
+                    <span class="verb-tag">Increased</span>
+                    <span class="verb-tag">Reduced</span>
+                    <span class="verb-tag">Accelerated</span>
+                    <span class="verb-tag">Generated</span>
+                    <span class="verb-tag">Delivered</span>
+                    <span class="verb-tag">Saved</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips to Use These Verbs Effectively -->
+        <section class="bg-blue-100 p-6 md:p-8 rounded-xl shadow-md mb-12 border border-blue-200">
+            <h2 class="text-2xl lg:text-3xl font-bold text-blue-900 mb-6 flex items-center">
+                <span class="mr-2 text-purple-600 text-3xl">✅</span> Tips to Use These Verbs Effectively:
+            </h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-3">
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-500 text-xl flex-shrink-0 mt-0.5">✔</span>
+                    <p><strong class="text-blue-800">Always start bullet points with a strong action verb.</strong></p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-500 text-xl flex-shrink-0 mt-0.5">✔</span>
+                    <p><strong class="text-blue-800">Try to quantify your impact:</strong>
+                        <br>Example: *Optimized frontend performance, reducing load time by 40%*
+                    </p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-500 text-xl flex-shrink-0 mt-0.5">✔</span>
+                    <p><strong class="text-blue-800">Avoid passive language</strong> like “was involved in” or “responsible for”.</p>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-2 text-blue-500 text-xl flex-shrink-0 mt-0.5">✔</span>
+                    <p><strong class="text-blue-800">Vary your verbs</strong> across different bullet points to keep the resume dynamic.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Dummy User ID Section (Not relevant for static HTML, but retained for consistency) -->
+        <div class="text-xs text-gray-500 text-center mt-12 p-2 bg-gray-100 rounded-md">
+            User ID: guide-viewer-id (This ID is for collaborative features and may vary across sessions)
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white p-4 text-center text-sm mt-8 shadow-inner">
+        &copy; <span id="current-year"></span> TechUprise Resume Power Verbs Guide
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set dynamic copyright year in footer
+            const currentYearSpan = document.getElementById('current-year');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            } else {
+                console.error("Element with ID 'current-year' not found in footer. Cannot set copyright year.");
+            }
+        });
+    </script>
+</body>
+</html>
